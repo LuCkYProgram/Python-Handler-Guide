@@ -15,4 +15,7 @@ Now turning the model around, the game could ask the keyboard: Hey, when a key i
 Creating handlers and development is a multi process connection between requests and its components. It's best to not rush these topics but be mindful to approach each step, slowly before approaching other steps. Understanding these will create a connection to other components of python handlers.
 
 [Creating a Handler](https://github.com/LuCkYProgram/Python-Handler-Guide/blob/main/Guides/Creating_Handlers/Creating.md)
+
+[Adding Functionality](https://github.com/LuCkYProgram/Python-Handler-Guide/blob/main/Guides/Adding_Functionality/Functionality.md)
+
 [Handler Collections]()
