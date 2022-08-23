@@ -22,3 +22,19 @@ class DerivedClass(BaseClass):
 
 Like in the ``handler_ex_1.py`` example, the BaseClass is imported from the cursepy.handlers.base file and having the BaseClass imported into the file of the handler.
 The DerivedClass is processed in the current handler file where the functionality of the class is formulated. (``class DummyHand(BaseHandler)``)
+
+The handler name is important for identifying like minded handlers. It is good practice to make all handlers of the same backend share the same name. You can set a name by passing a value to the init method of BaseHandler like so:
+
+```python
+
+def __init__(self):
+
+        # Set our name:
+
+        super().__init__(name='DummyHand')
+
+```
+
+This will set the handler’s name to ‘DummyHand’.
+
+Handlers can also run code when they are started and stopped. This can be defined by using the ‘start()’ and ‘stop()’ methods:

@@ -6,4 +6,20 @@ from cursepy.handlers.base import BaseHandler
 
 class DummyHand(BaseHandler):
 
-    pass
+    def __init__(self):
+
+        # Set our name:
+
+        super().__init__(name='DummyHand')
+
+    def start(self):
+
+        # Start this handler, somehow:
+
+        print("Handler is started!")
+
+    def stop(self):
+
+        # Stop this handler, somehow:
+
+        print("Handler is stopped!")
