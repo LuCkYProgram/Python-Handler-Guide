@@ -38,3 +38,21 @@ def __init__(self):
 This will set the handler’s name to ‘DummyHand’.
 
 Handlers can also run code when they are started and stopped. This can be defined by using the ‘start()’ and ‘stop()’ methods:
+
+```python
+ def start(self):
+
+        # Start this handler, somehow:
+
+        print("Handler is started!")
+
+    def stop(self):
+
+        # Stop this handler, somehow:
+
+        print("Handler is stopped!")
+```
+
+When this handler is loaded, then ‘Handler is started!’ is printed to the terminal. When the handler is unloaded, then ‘Handler is stopped’ is printed to the terminal.
+
+It is also important for the handler to identify what event they are registered to. This is helpful for end users and the HC class, as it can use this info to determine what a handler does. By default, this value is -1, which is guaranteed by cursepy to NEVER be a valid event ID.
