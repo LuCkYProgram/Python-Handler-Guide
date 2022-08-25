@@ -56,3 +56,13 @@ Handlers can also run code when they are started and stopped. This can be define
 When this handler is loaded, then ‘Handler is started!’ is printed to the terminal. When the handler is unloaded, then ‘Handler is stopped’ is printed to the terminal.
 
 It is also important for the handler to identify what event they are registered to. This is helpful for end users and the HC class, as it can use this info to determine what a handler does. By default, this value is -1, which is guaranteed by cursepy to NEVER be a valid event ID.
+
+To specify what event this handler is tied to, you can use the ID parameter, as documented here:
+
+```python
+class DummyHand(BaseHandler):
+
+    ID = 1
+
+    def __init__(self):
+```
